@@ -1,0 +1,224 @@
+<!DOCTYPE HTML>
+
+-->
+<html>
+	<head>
+		<title>The Smarter Watch</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+		<script src="/js/jquery.min.js"></script>
+		<script src="/js/jquery.poptrox.min.js"></script>
+		<script src="/js/jquery.scrolly.min.js"></script>
+		<script src="/js/jquery.scrollgress.min.js"></script>
+		<script src="/js/skel.min.js"></script>
+		<script src="/js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="/css/skel.css" />
+			<link rel="stylesheet" href="/css/style.css" />
+			<link rel="stylesheet" href="/css/style-wide.css" />
+			<link rel="stylesheet" href="/css/style-normal.css" />
+		</noscript>
+		<style>
+		aside {
+			float: right;
+			width: 220px;
+		}
+		</style>
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header">
+
+				<!-- Logo -->
+					<h1 id="logo">Kristen Werner</h1>
+				
+				<!-- Nav -->
+					<nav id="nav">
+						<ul>
+							<li><a href="#intro">Home</a></li>
+							<li><a href="#one">Intro</a></li>
+							<li><a href="#two">Find An App!</a></li>
+							<li><a href="#work">Presentation Slides</a></li>
+							<li><a href="#work2">More Analytics</a></li>
+							<li><a href="#contact">Contact</a></li>
+						</ul> 
+					</nav>
+
+			</header>
+			
+		<!-- Intro -->
+			<section id="intro" class="main style1 dark fullscreen">
+				<div class="content container small">
+					<header>
+						<h2>The Smarter Watch.</h2>
+					</header>
+					<p>Increasing <strong>User Engagement</strong> on Pebble.</p>
+					<footer>
+						<a href="#one" class="button style2 down">More</a>
+					</footer>
+				</div>
+			</section>
+		
+		<!-- One -->
+			<section id="one" class="main style2 right dark fullscreen">
+				<div class="content box style2">
+					<header>
+						<h2>Intro</h2>
+					</header>
+					<p>Providing a great user experience is key to increasing user engagement and positive word of mouth. I have written Hive and Presto queries, developed an analytics codebase using Python, and designed an app recommendation engine using machine learning to enhance user interactions with the Pebble Smart Watch.</p>
+				</div>
+				<a href="#two" class="button style2 down anchored">Next</a>
+			</section>
+
+		<!-- Two -->
+			<section id="two" class="main style1 dark fullscreen">
+				<div class="content container small">
+						<header>
+							<h2>App Recommendations</h2>
+						</header>
+						<p>Select your favorite App from the dropdown menu.</p>
+							
+						<select name="app" onchange="give_recs(this.value);">
+							<option value="null">Select Your App</option>						
+							<option value="patek">Patek</option>
+							<option value="katy">Katy Perry Hop</option>
+							<option value="cartier">Cartier Square</option>
+							<option value="music">Music for Pebble</option>
+							<option value="dragon">DRAGON BALL-MOD</option>
+							<option value="homer">Homer Simpson v2</option>
+							<option value="pannerai">PEBBLE PANERAI</option>
+							<option value="pokemon">Pokémon Battle</option>
+							<option value="seven">7-Minute Workout</option>
+							<option value="universe">Big Univers</option>
+							<option value="taller">Taller</option>
+							<option value="ballet">Arabesque</option>
+							<option value="guardian">The Guardian for Pebble</option>
+							<option value="medical">Medical Staff</option>
+							<option value="R2D2">Artoo (R2D2)</option>
+							<option value="Nightscout">Nightscout</option>
+							<option value="tranformers">Transformers</option>
+							<option value="steam">SteamPebble Mark II</option>
+							<option value="music">Music for Pebble</option>
+							<option value="couch">C25K - Couch to 5K</option>
+						</select>
+						<p id="rec-one"></p>
+						<p id="rec-two"></p>
+				</div>
+				<a href="#work" class="button style2 down anchored">Next</a>
+			</section>
+
+		<!-- Work -->
+			<section id="work" class="main style3 primary">
+				<div class="content container">
+					<header>
+						<h2>Understanding Smart Watch Users + Improving UX</h2>
+						<p>An overview of the analytics and machine learning behind my smart watch app recommendation engine.</p>
+					</header>
+					
+					<!-- Lightbox Gallery  -->
+						<div class="container small gallery">
+							<div class="row flush images">
+								<div class="6u"><a href="images/fulls/Slide1b.jpg" class="image fit from-left"><img src="images/thumbs/Slide1Dark.jpg" title="The Smarter Watch" alt="" /></a></div>
+								<div class="6u"><a href="images/fulls/Slide2.jpg" class="image fit from-right"><img src="images/thumbs/Slide2Dark.jpg" title="Backend Tools + Processing" alt="" /></a></div>
+							</div>
+							<div class="row flush images">
+								<div class="6u"><a href="images/fulls/Slide3.jpg" class="image fit from-left"><img src="images/thumbs/Slide3Dark.jpg" title="Number of Hours a User Wears Pebble per Day" alt="" /></a></div>
+								<div class="6u"><a href="images/fulls/Slide4.jpg" class="image fit from-right"><img src="images/thumbs/Slide4Dark.jpg" title="Hours of App Runtime per Month" alt="" /></a></div>
+							</div>
+							<div class="row flush images">
+								<div class="6u"><a href="images/fulls/Slide5.jpg" class="image fit from-left"><img src="images/thumbs/Slide5Dark.jpg" title="ML Algorithm Underlying the App Recommendation Engine" alt="" /></a></div>
+								<div class="6u"><a href="images/fulls/Slide6.jpg" class="image fit from-right"><img src="images/thumbs/Slide6Dark.jpg" title="Actionable Items" alt="" /></a></div>
+							</div>
+							<div class="row flush images">
+								<div class="6u"><a href="images/fulls/AboutMe.jpg" class="image fit from-left"><img src="images/thumbs/AboutMeDark.jpg" title="Neuroscientist, Dog-lover, Triathlete, and Robotics Tinkerer" alt="" /></a></div>
+								<div class="6u"><a href="images/fulls/Slide8.jpg" class="image fit from-right"><img src="images/thumbs/Slide8Dark.jpg" title="Thanks!" alt="" /></a></div>
+							</div>
+						</div>
+
+				</div>
+			</section>
+	
+	<!-- Work -->
+			<section id="work2" class="main style3 primary">
+				<div class="content container">
+					<header>
+						<h2>Analytics + Metric Development</h2>
+						<p>Here are more detailed analyses that I used to understand Pebble market fit, use cases, and develop meaningful metrics.</p>
+					</header>
+					
+					<!-- Lightbox Gallery  -->
+						<div class="container small gallery">
+							<div class="row flush images">
+								<div class="6u"><a href="images/fulls/XSlide1b.jpg" class="image fit from-left"><img src="images/thumbs/XSlide1Dark.jpg" title="Reflects users with at least one watch-to-phone app communication on a given day." alt="" /></a></div>
+								<div class="6u"><a href="images/fulls/XSlide2.jpg" class="image fit from-right"><img src="images/thumbs/XSlide2Dark.jpg" title="Net Accelerometer Motion Above Noise Cutoff of 32" alt="" /></a></div>
+							</div>
+							<div class="row flush images">
+								<div class="6u"><a href="images/fulls/XSlide3.jpg" class="image fit from-left"><img src="images/thumbs/XSlide3Dark.jpg" title="Validation of Accerlometer Motion Cutoff Point" alt="" /></a></div>
+								<div class="6u"><a href="images/fulls/XSlide4.jpg" class="image fit from-right"><img src="images/thumbs/XSlide4Dark.jpg" title="Actionable Insights" alt="" /></a></div>
+							</div>
+							<div class="row flush images">
+							</div>
+						</div>
+
+				</div>
+			</section>
+
+		<!-- Contact -->
+			<section id="contact" class="main style3 secondary">
+				<div class="content container">
+					<header>
+						<h2>Say Hello.</h2>
+						<p>Questions? Comments? Ideas? Tell me about it!</p>
+					</header>
+					<div class="box container small">
+					
+					<!-- Contact Form -->
+							<form method="post" action="mailto:kristen@orbitist.org">
+								<div class="row half">
+									<div class="6u"><input type="text" name="name" placeholder="Name" /></div>
+									<div class="6u"><input type="email" name="email" placeholder="Email" /></div>
+								</div>
+								<div class="row half">
+									<div class="12u"><textarea name="message" placeholder="Message" rows="6"></textarea></div>
+								</div>
+								<div class="row">
+									<div class="12u">
+										<ul class="actions">
+											<li><input type="submit" value="Send Message" /></li>
+										</ul>
+									</div>
+								</div>
+							</form>
+
+					</div>
+				</div>
+			</section>
+			
+		<!-- Footer -->
+			<footer id="footer">
+
+				<!-- Icons -->
+					<ul class="actions">
+						<li><a href="https://twitter.com/orbitist" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="https://www.facebook.com/kristenmwerner" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="https://plus.google.com/+KristenWerner-Orbitist/posts" class="icon fa-google-plus"><span class="label">Google+</span></a></li>
+						<li><a href="https://github.com/mellocello" class="icon fa-github"><span class="label">Github</span></a></li>
+						<li><a href="http://www.orbitist.org/" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+						<li><a href="http://www.pinterest.com/kristenmwerner/" class="icon fa-pinterest"><span class="label">Pinterest</span></a></li>
+						<li><a href="http://instagram.com/orbitist" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+					</ul>
+
+				<!-- Menu -->
+					<ul class="menu">
+						<li>&copy; Kristen Werner</li>
+					</ul>
+			
+			</footer>
+
+
+	</body>
+</html>
